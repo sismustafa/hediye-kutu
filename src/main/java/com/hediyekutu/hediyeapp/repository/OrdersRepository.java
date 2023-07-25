@@ -17,6 +17,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface OrdersRepository extends JpaRepository<Orders, Long> {
 
-    public List<Orders> findByTop1UserId(Long id);
+    public List<Orders> findByUserId(Long id);
 
 }

@@ -34,6 +34,6 @@ public class OrdersService {
     }
 
     public List<Orders> getAllOrderOfUser(Long id) {
-        return ordersRepository.findByTop1UserId(id);
+        return ordersRepository.findByUserId(id);
     }
 }
